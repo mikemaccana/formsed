@@ -1,0 +1,15 @@
+{
+	"name": "FormSed",
+	"version": "2012.11.16",
+	"description": "Substitute/replace on forms from the Chrome developer console",
+	"content_scripts": [
+		{
+			"matches": [
+			    "https://developers.facebook.com/apps/*/summary*"
+			],
+			"js": ["jquery.js", "content.js"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [ "<all_urls>" ]
+}
